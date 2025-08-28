@@ -1,14 +1,59 @@
 <!doctype html>
-<html lang="en">
+<html lang="uz">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./public/yer.png" />
+    <link rel="icon" type="image/png" href="/yer.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>New tab — Tez, zamonaviy va xavfsiz</title>
+    <meta name="description" content="New tab — zamonaviy React/Vite sahifa. Tez yuklanish, toza UI va SEO-ga mos meta teglar bilan." />
+    <meta name="keywords" content="new tab, react, vite, zamonaviy, tez, SEO" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://your-domain.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="New tab — Tez, zamonaviy va xavfsiz" />
+    <meta property="og:description" content="Zamonaviy React/Vite sahifa. Tez yuklanish va SEO uchun optimallashtirilgan." />
+    <meta property="og:url" content="https://your-domain.com/" />
+    <meta property="og:image" content="https://your-domain.com/og-image.jpg" />
+    <meta property="og:site_name" content="New tab" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="New tab — Tez, zamonaviy va xavfsiz" />
+    <meta name="twitter:description" content="Zamonaviy React/Vite sahifa. Tez yuklanish va SEO uchun optimallashtirilgan." />
+    <meta name="twitter:image" content="https://your-domain.com/og-image.jpg" />
+
+    <!-- PWA / tema rangi -->
+    <meta name="theme-color" content="#0ea5e9" />
+    <link rel="apple-touch-icon" href="/yer.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Preconnect (agar Google Fonts ishlatsangiz) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Search Console tasdiqlash -->
     <meta name="google-site-verification" content="s4F-nH9GiDy7X__K-FPp_RVD_nExvKN-R_rlkqL9p0o" />
-    <title>New tab</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- JSON-LD: WebSite + SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "New tab",
+      "url": "https://your-domain.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://your-domain.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
   </body>
 </html>
